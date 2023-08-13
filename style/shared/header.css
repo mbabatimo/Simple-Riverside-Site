@@ -1,0 +1,268 @@
+.info{
+  margin-top: 0;
+  background-color:  #2592e5ec;
+  height: 30px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+
+.info-call{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.info-phone-icon{
+  width: 20px;
+}
+.info-location{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.location-icon{
+  margin-left: 10px;
+  
+  width: 25px;
+}
+
+.location-text{
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+
+
+.main-header {
+  margin-top: 30px;
+  background-color: rgb(247, 248, 249);
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 100;
+}
+
+
+.header-left-section {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.name-logo{
+  color: #2592e5ec;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: px;
+}
+
+
+.header-link {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  border: 0.04px solid hsl(200, 24%, 85%);
+}
+
+
+.categories-link{
+  display: inline-block;
+  position: relative;
+  padding: 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.categories-dropdown {
+  display: none;
+  position: absolute;
+  width: 300px;
+  top: 100%;
+  left: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F6F6 100%);
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 30;
+  opacity: 0; 
+  pointer-events: none; 
+  transition: opacity 1s ease, visibility 0.3s 0.5s; 
+  overflow: hidden;
+}
+
+.categories-dropdown a {
+  color: #333;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+  font-weight: 500; 
+}
+
+.categories-dropdown a:hover {
+  background-color: #eaeaea;
+}
+
+.categories-link:hover .categories-dropdown {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+
+
+.categories-link:hover .categories-dropdown,
+.categories-dropdown:hover {
+    opacity: 1; 
+    pointer-events: auto;
+    transition-delay: 0s;
+}
+
+/* .categories-link:hover {
+  border: 0.04px solid hsl(200, 24%, 85%);
+} */
+
+
+
+.riverside-logo {
+  width: 25px;
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  .header-left-section {
+    width: unset;
+  }
+}
+
+
+
+
+.header-middle-section {
+  flex: 1;
+  max-width: 850px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.search-bar {
+  flex: 1;
+  width: 0;
+  font-size: 16px;
+  height: 39px;
+  padding-left: 15px;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-button {
+  background-color: #2592e5ec;
+  border: none;
+  width: 45px;
+  height: 43px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  height: 22px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+
+.header-right-section {
+  width: 180px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.orders-link {
+  color: #2592e5ec;
+  align-items: center;
+}
+
+.returns-text {
+  display: block;
+  font-size: 15px;
+}
+
+.account-text {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.account-icon {
+  width: 35px;
+}
+
+
+
+
+.cart-link {
+  color: #2592e5ec;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 15px;
+}
+
+.cart-icon {
+  width: 35px;
+}
+
+.cart-text {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-quantity {
+  color: #d71e0a;
+  font-size: 16px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  
+  width: 26px;
+  text-align: center;
+}
+
